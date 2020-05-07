@@ -3,92 +3,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/getGPSBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="228dp"
+        android:text="@string/gps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText_lat"
+        app:layout_constraintStart_toEndOf="@+id/editText_lon"
+        app:layout_constraintTop_toBottomOf="@+id/editText_magnetic" />
 
     <TextView
-        android:id="@+id/editText_x5"
-        android:layout_width="120dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="264dp"
-        android:layout_marginLeft="264dp"
-        android:layout_marginBottom="260dp"
+        android:id="@+id/editText_lat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="243dp"
         android:ems="10"
-        android:hint="Latitude"
+        android:hint="@string/latitude"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/getGPSBtn"
+        app:layout_constraintTop_toBottomOf="@+id/editText_z" />
 
     <TextView
-        android:id="@+id/editText_x4"
-        android:layout_width="120dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginBottom="260dp"
+        android:id="@+id/editText_lon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="243dp"
         android:ems="10"
-        android:hint="Longitude"
+        android:hint="@string/longitude"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/editText_x3"
-        android:layout_width="120dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginBottom="352dp"
-        android:ems="10"
-        android:hint="Temperatura"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/getGPSBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_x" />
 
     <TextView
         android:id="@+id/editText_light"
-        android:layout_width="120dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginBottom="452dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginBottom="97dp"
         android:ems="10"
-        android:hint="Luminosidade"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:hint="@string/luminosidade"
+        app:layout_constraintBottom_toTopOf="@+id/editText_y"
+        app:layout_constraintEnd_toEndOf="@+id/editText_y"
+        app:layout_constraintStart_toStartOf="@+id/editText_y"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/editText_x"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="548dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="146dp"
         android:ems="10"
-        android:hint="X"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/x"
+        app:layout_constraintBottom_toTopOf="@+id/editText_lon"
+        app:layout_constraintEnd_toStartOf="@+id/editText_y"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_height="wrap_content" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/editText_y"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginBottom="548dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="69dp"
         android:ems="10"
-        android:hint="Y"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        android:hint="@string/y"
+        app:layout_constraintBottom_toTopOf="@+id/editText_magnetic"
+        app:layout_constraintEnd_toStartOf="@+id/editText_z"
+        app:layout_constraintStart_toEndOf="@+id/editText_x"
+        app:layout_constraintTop_toBottomOf="@+id/editText_light" />
 
     <TextView
         android:id="@+id/editText_z"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="272dp"
-        android:layout_marginLeft="272dp"
-        android:layout_marginBottom="548dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="146dp"
         android:ems="10"
-        android:hint="Z"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:hint="@string/z"
+        app:layout_constraintBottom_toTopOf="@+id/editText_lat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_y"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editText_magnetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="45dp"
+        android:hint="@string/campo_magn_tico"
+        app:layout_constraintBottom_toTopOf="@+id/getGPSBtn"
+        app:layout_constraintEnd_toStartOf="@+id/editText_lat"
+        app:layout_constraintTop_toBottomOf="@+id/editText_y" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

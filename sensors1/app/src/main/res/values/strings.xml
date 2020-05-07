@@ -2,4 +2,13 @@
     <string name="app_name">sensors1</string>
     <string name="button_main">Send</string>
     <string name="editText_main">Enter a message</string>
+    <string name="gps">GPS</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="luminosidade">Luminosidade</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="campo_magn_tico">Campo Magnético</string>
+    <string name="aceler_metro">Acelerômetro</string>
 </resources>
