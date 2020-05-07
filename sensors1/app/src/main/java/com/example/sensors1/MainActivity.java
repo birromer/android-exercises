@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         editText_z.setText("Z: " + sensorZ);
     } else if (sensor.getType() == Sensor.TYPE_LIGHT) {
         editText_light.setText("Light Intensity: " + event.values[0]);
-    }
+    } else if (sensor.getType() == Sensor.TYPE)
   }
 
   @Override
